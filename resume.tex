@@ -1,0 +1,192 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Elijah Milan De Mateo Inamarga} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(619)586-3265} ~ 
+    {\faEnvelope\  \underline{elijahcek@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/elijah-inamarga/}{linkedin.com/elijah-inamarga}}  ~
+    {\faGithub\ \underline{\href{https://github.com/ElijahInamarga}{github.com/ElijahInamarga}} ~
+\end{center}
+
+ %-----------EDUCATION-----------
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {San Diego State University}{August 2023 -- May 2027}
+      {Bachelor of Computer Science 
+      }{San Diego, CA}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {Dean's List | \textbf{GPA: 3.786}}
+        \vspace{-7pt}
+        \resumeItem {Courses: Electricity and Magnetism, Computer Architecture, Computer Organization, Data Structures and Algorithms, Software Systems, Linear Algebra, Statistical Principles and Practices}
+    \resumeItemListEnd
+    \vspace{-8pt}
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{ZUM Radio Inc.}{June 2025 -- August 2025}{Software Engineer Intern}{Remote} 
+                \resumeItemListStart
+                    \resumeItem{Developed and implemented audio encoding/decoding firmware on an \textbf{STM32-H723} using \textbf{C} and \textbf{C++}, replacing dedicated hardware, significantly reducing per-unit material costs for production}
+                    \resumeItem{Profiled firmware using \textbf{GDB}, identifying performance hotspots by analyzing execution times and resource utilization for later optimization}
+                    \resumeItem{Optimized vocoder firmware, improving execution time by up to \textbf{80\%} for critical processes, eliminating performance bottlenecks and enabling real-time audio processing in an embedded system}
+                    \resumeItem{Captured and analyzed digital waveforms using a logic analyzer to troubleshoot timing issues, protocol errors, and signal integrity between an \textbf{AMBE voice codec} interface and an \textbf{STM32-F446RE}}
+                    \resumeItem{Actively contributed to the full software development lifecycle, including performing peer code reviews, managing version control with \textbf{Git}, participating in collaborative scrum meetings, and writing technical documentation}
+                    \resumeItemListEnd
+            \resumeSubheading{Jersey Mike's Subs}{March 2024 -- May 2024}{Food Service Worker}{San Diego, CA} 
+                \resumeItemListStart
+                    \resumeItem{Maintained a clean and safe food environment, following food safety protocols and guidelines }
+                    \resumeItem{Operated effectively within a high-volume, fast-paced environment, adeptly managing multiple tasks to meet and exceed dynamic customer demands}
+                    \resumeItem{Coordinated with small teams to provide customers with quick and quality services}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Jammy}} $|$ \emph{\href{https://github.com/ElijahInamarga/jammy.git}{Source Code}}}{React $|$ JavaScript}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Built a web app implementing existing Spotify functions using \textbf{JavaScript} and \textbf{React} and allowed users to sign in}
+            \resumeItem{Authenticated users with Spotify's Implicit Grant Flow Authorization, search for songs, create and save playlists using Spotify's API to retrieve and upload content metadata from and to their Spotify account}
+            \resumeItem{Incorporated \textbf{REST API} from Spotify, retrieving and uploading content metadata from and to Spotify }
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Monopoly}} $|$ \emph{\href{https://github.com/ElijahInamarga/Monopoly_Game.git}{Source Code}}}{Qt $|$ C++}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a personal implementation of the popular Monopoly board game using \textbf{C++} and the \textbf{Qt} for the graphical user interface}
+            \resumeItem{Integrated the \textbf{Qt Framework}, \textbf{Object Oriented Programming}, and a circular linked list data structure as a basis for the game}
+          \resumeItemListEnd
+ \vspace{-17pt}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+%-----------LEADERSHIP-----------
+\section{Certification} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{HAM Radio Technician License $|$ Federal Communications Commission}}}{Jun 2025 -- Jun 2035}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Certified in radio communications, technical operations, satellite communications, and various voice and digital modes}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: C, C++, Python, Java, JavaScript, HTML/CSS, MIPS Assembly} \\[1mm]
+     \textbf{Tools}{: Linux, GDB, GCC, STM32CubeIDE, Visual Studio Code, PlatformIO, Git, Microsoft Office Suite} \\[1mm]
+     \textbf{Libraries/Frameworks}{: Qt, React, Redux} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
